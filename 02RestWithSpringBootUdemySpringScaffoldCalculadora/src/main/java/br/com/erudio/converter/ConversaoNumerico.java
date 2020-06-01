@@ -1,10 +1,12 @@
 package br.com.erudio.converter;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public class ConversaoNumerico {
 
 	
-	public static Double convertToDouble(String strNumber) {
+	public Double convertToDouble(String strNumber) {
 		if(strNumber == null) return 0D;
 		
 		String number = strNumber.replaceAll(",", ".");
@@ -14,7 +16,7 @@ public class ConversaoNumerico {
 		return 0D;
 	}
 
-	public static boolean isNumeric(String strNumber) {
+	public boolean isNumeric(String strNumber) {
 		
 		if(strNumber == null) return false;
 		

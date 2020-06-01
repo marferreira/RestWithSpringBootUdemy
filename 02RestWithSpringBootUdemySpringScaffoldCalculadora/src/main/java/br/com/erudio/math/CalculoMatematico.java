@@ -1,5 +1,8 @@
 package br.com.erudio.math;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class CalculoMatematico {
 
 	public Double soma(Double numberOne, Double numberTwo) throws Exception{
